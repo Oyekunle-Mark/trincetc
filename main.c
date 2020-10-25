@@ -1,7 +1,7 @@
 #include "circleArea.h"
 
 int main() {
-    programMain();
+    circularAreaMain();
 
     return 0;
 }

@@ -5,7 +5,7 @@
 
 double circularArea(double radius);
 
-void programMain() {
+void circularAreaMain() {
     double radius = 1.0;
     double area = 0.0;
 
