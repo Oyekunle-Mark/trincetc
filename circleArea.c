@@ -22,3 +22,8 @@ int main() {
 
     return 0;
 }
+
+double circularArea(double radius) {
+    const double pi = 3.1415926536;
+    return pi * radius * radius;
+}
