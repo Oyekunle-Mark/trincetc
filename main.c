@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include "circleArea.h"
 
 int main() {
-    printf("Hello, World!\n");
+    programMain();
+
     return 0;
 }
