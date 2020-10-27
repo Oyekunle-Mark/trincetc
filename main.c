@@ -6,9 +6,8 @@ int main() {
     circularAreaMain();
     writeRandom();
 
-    const int ARR_SIZE = 5;
-    float arr[ARR_SIZE] = {0.5, 9.3, 2.0, 3.045, 4.0};
-    double avg = average(arr, ARR_SIZE);
+    float arr[] = {0.0, 1.0, 2.0, 3.0, 4.0};
+    double avg = average(arr, sizeof(arr) / sizeof(*arr));
 
     printf("The average is: %f", avg);
 
