@@ -3,6 +3,7 @@
 #include "average.h"
 #include "strReverse.h"
 #include "strCopy.h"
+#include "addNumbers.h"
 
 
 int main(int argc, char *argv[]) {
@@ -39,6 +40,7 @@ int main(int argc, char *argv[]) {
     strCopy(str1, str2);
 
     printf("After copy, str1 is now %s\n", str1);
+    printf("Sum of digits: %f", add(5, 1, 2, 3));
 
     return 0;
 }
