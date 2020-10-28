@@ -1,7 +1,8 @@
 #include "circleArea.h"
 #include "writeRandom.h"
 #include "average.h"
-#include "readNumberAndFindAverage.h"
+#include "strReverse.h"
+
 
 int main() {
     circularAreaMain();
@@ -10,9 +11,11 @@ int main() {
     float arr[] = {0.0, 1.0, 2.0, 3.0, 4.0};
     double avg = average(arr, sizeof(arr) / sizeof(*arr));
 
-    printf("The average is: %f", avg);
+    printf("The average is: %f\n", avg);
 
-    readAndFindAverage();
+    char str[] = "Hello, world!";
+    strReverse(str);
+    printf("The reversed string is %s", str);
 
     return 0;
 }
