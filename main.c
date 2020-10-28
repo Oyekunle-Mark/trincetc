@@ -2,6 +2,7 @@
 #include "writeRandom.h"
 #include "average.h"
 #include "strReverse.h"
+#include "strCopy.h"
 
 
 int main() {
@@ -15,7 +16,14 @@ int main() {
 
     char str[] = "Hello, world!";
     strReverse(str);
-    printf("The reversed string is %s", str);
+    printf("The reversed string is %s\n", str);
+
+    char str1[] = "Hello, rats!";
+    char str2[] = "Hello, cats!";
+
+    strCopy(str1, str2);
+
+    printf("After copy, str1 is now %s\n", str1);
 
     return 0;
 }

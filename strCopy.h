@@ -2,8 +2,8 @@
 // Created by Oyekunle Oloyede on 28/10/2020.
 //
 
-#ifndef TRINCETC_STRCPY_H
-#define TRINCETC_STRCPY_H
+#ifndef TRINCETC_STRCOPY_H
+#define TRINCETC_STRCOPY_H
 
 char *strCopy(char *s1, const char *s2) {
     int index = 0;
@@ -16,4 +16,4 @@ char *strCopy(char *s1, const char *s2) {
     return s1;
 }
 
-#endif //TRINCETC_STRCPY_H
+#endif //TRINCETC_STRCOPY_H
