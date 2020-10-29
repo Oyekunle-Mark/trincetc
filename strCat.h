@@ -5,6 +5,9 @@
 #ifndef TRINCETC_STRCAT_H
 #define TRINCETC_STRCAT_H
 
+/**
+ * Concatenates two strings
+ */
 char *strCat(char *s1, const char *s2) {
     char *s1Ptr = s1;
 

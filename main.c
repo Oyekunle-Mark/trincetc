@@ -4,6 +4,7 @@
 #include "strReverse.h"
 #include "strCopy.h"
 #include "addNumbers.h"
+#include "strCat.h"
 
 
 int main(int argc, char *argv[]) {
@@ -34,13 +35,16 @@ int main(int argc, char *argv[]) {
     strReverse(str);
     printf("The reversed string is %s\n", str);
 
-    char str1[] = "Hello, rats!";
+    char str1[30] = "Hello, rats!";
     char str2[] = "Hello, cats!";
 
     strCopy(str1, str2);
 
     printf("After copy, str1 is now %s\n", str1);
-    printf("Sum of digits: %f", add(5, 1, 2, 3));
+    printf("Sum of digits: %f\n", add(5, 1, 2, 3));
+
+    char *result = strCat(str1, str2);
+    puts(result);
 
     return 0;
 }
