@@ -12,4 +12,6 @@ char *getLine(void);
 
 int strCompare(const void *, const void *);
 
+void sortLines(void);
+
 #endif //TRINCETC_SORTLINES_H
