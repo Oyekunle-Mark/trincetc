@@ -5,6 +5,7 @@
 #include "strCopy.h"
 #include "addNumbers.h"
 #include "strCat.h"
+#include "performMath.h"
 
 
 int main(int argc, char *argv[]) {
@@ -45,6 +46,8 @@ int main(int argc, char *argv[]) {
 
     char *result = strCat(str1, str2);
     puts(result);
+
+    performMath();
 
     return 0;
 }
