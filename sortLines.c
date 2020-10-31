@@ -8,6 +8,22 @@
 
 void sortLines() {
     char *linePtr[N_LINES_MAX];
+
+    int n = 0;
+
+    for (; n < N_LINES_MAX && (linePtr[n] = getLine()) != NULL; ++n);
+
+    if (!feof(stdin)) {
+        if (n == N_LINES_MAX)
+            fputs("sorttext: too many lines.\n", stderr);
+        else
+            fputs("sorttext: error reading from stdin\n", stderr);
+    } else {
+        qsort(linePtr, n, sizeof(char *), strCompare);
+
+        for (char **p = linePtr; p < linePtr + n; ++p)
+            puts(*p);
+    }
 }
 
 char *getLine() {
