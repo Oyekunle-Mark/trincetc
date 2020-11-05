@@ -5,8 +5,7 @@
 #include "strCopy.h"
 #include "addNumbers.h"
 #include "strCat.h"
-#include "performMath.h"
-
+#include "isReadWritable.h"
 
 int main(int argc, char *argv[]) {
     if (argc == 0)
@@ -47,7 +46,8 @@ int main(int argc, char *argv[]) {
     char *result = strCat(str1, str2);
     puts(result);
 
-    performMath();
+    char filename[] = "../LICENSE";
+    printf("Is file %s read and writable? %s\n", filename, isReadWritable(filename) ? "true" : "false");
 
     return 0;
 }
