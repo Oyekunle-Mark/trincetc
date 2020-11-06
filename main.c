@@ -46,8 +46,5 @@ int main(int argc, char *argv[]) {
     char *result = strCat(str1, str2);
     puts(result);
 
-    char filename[] = "../LICENSE";
-    printf("Is file %s read and writable? %s\n", filename, isReadWritable(filename) ? "true" : "false");
-
     return 0;
 }
